@@ -1,12 +1,17 @@
 ﻿using System;
 
-namespace _10_AbstractFactory
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        ILogistica logistica = new LogisticaMaritima();
+
+        ICargo cargo = logistica.CreateCargo();
+        ITransport transport = logistica.CreateTransport();
+
+        transport.Deliver(cargo);
+
+        Console.WriteLine("-------------------------------------------------------------------------------");
     }
 }
+

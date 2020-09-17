@@ -1,4 +1,4 @@
-﻿public class LogistaTerrestre : ILogistica
+﻿public class LogisticaTerrestre : ILogistica
 {
     public ICargo CreateCargo()
     {
