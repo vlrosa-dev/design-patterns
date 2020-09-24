@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-
-public interface IPrototype
+﻿public interface IPrototype
 {
+    IPrototype Clone();
+
+    IPrototype ShallowCopy();
+    void Print();
 }
