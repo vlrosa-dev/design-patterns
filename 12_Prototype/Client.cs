@@ -12,7 +12,7 @@ public class Client
             Age = 18,
             BirthDate = Convert.ToDateTime("2002-01-01"),
             Name = "Roberto",
-            Address = new Address("Rua 5")
+            Address = new Address("Vix",58)
         };
         Person P2 = P1;
         Person P3 = P1.ShallowCopy();
@@ -30,7 +30,7 @@ public class Client
         P3.Print();
         P4.Print();
 
-        P1.Address = new Address("Vila Velha");
+        P1.Address.Street = "Vila Velha";
         Console.WriteLine("Mudou o endereço (referência)");
         P1.Print();
         P2.Print();

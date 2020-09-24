@@ -19,7 +19,7 @@ public class Person
     {
         Person clone = (Person)this.MemberwiseClone();
         clone.Name = string.Copy(Name);
-        clone.Address = new Address(Address.Street);
+        clone.Address = new Address(Address.Street, Address.Cep);
 
         return clone;
     }
