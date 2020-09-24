@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-public class EmailBuilder : IEmailBuilder
+﻿public class EmailBuilder : IEmailBuilder
 {
     private Email _email;
     public EmailBuilder()
