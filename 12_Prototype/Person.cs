@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Person : IPrototype
+public class Person
 {
     public int Age { get; set; }
     public DateTime BirthDate { get; set; }
@@ -8,14 +8,14 @@ public class Person : IPrototype
     public Address Address { get; set; }
     public void Print()
     {
-        Console.WriteLine($"Age:{Age}, Birth:{BirthDate}, Name:{Name}, Addres:{Address}");
+        Console.WriteLine($"Age:{Age}, Birth:{BirthDate}, Name:{Name}, Addres:{Address.Street}");
     }
 
-    public IPrototype ShallowCopy()
+    public Person ShallowCopy()
     {
         return (Person)this.MemberwiseClone();
     }
-    public IPrototype Clone()   //DeepCopy
+    public Person Clone()   //DeepCopy
     {
         Person clone = (Person)this.MemberwiseClone();
         clone.Name = string.Copy(Name);
