@@ -1,6 +1,6 @@
 ﻿public class HRSystem
 {
-    public string[][] GetEmpyees()
+    public string[][] GetEmployees()
     {
         string[][] employees = new string[4][];
         employees[0] = new string[] { "15", "Ricardo", "Professor" };

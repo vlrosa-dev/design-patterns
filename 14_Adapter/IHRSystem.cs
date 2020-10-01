@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _14_Adapter
+public interface IHRSystem
 {
-    class IHRSystem
-    {
-    }
+    List<string> GetEmployees();
 }

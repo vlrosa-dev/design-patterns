@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 
 
-class ThirdPartySystem
+public class ThirdPartySystem
 {
+    public void ShowEmpoyeeList(IHRSystem hr)
+    {
+        List<string> lista = hr.GetEmployees();
+    }
 }
