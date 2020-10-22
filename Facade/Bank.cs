@@ -9,7 +9,7 @@ namespace Facade
         public bool CheckSaving(Client c, int amount)
         {
             Console.WriteLine($"Checking {c.Name} Savings");
-            return new Random().Next(100) < 50 ? true : false;
+            return new Random().Next(100) < 50 ? false : true;
         }
     }
 }
